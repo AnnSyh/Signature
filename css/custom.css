@@ -1,0 +1,67 @@
+body {
+  font-family: Roboto;
+}
+
+.bg-blue {
+  background-color: #3298DC;
+}
+
+@media (min-width: 992px) {
+  .navbar-project {
+    min-height: 90px;
+  }
+}
+.navbar-project a {
+  color: #fff;
+  font-size: 18px;
+}
+.navbar-project .logo-project {
+  width: 175px;
+  height: 27px;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  padding-left: 70px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.navbar-dark.navbar-project .navbar-nav .nav-link {
+  color: white;
+}
+.navbar-dark.navbar-project .navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.1rem;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+.login a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.user-icon {
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+  background-image: url(../images/icons/enter.svg);
+  background-repeat: no-repeat;
+  display: inline-flex;
+}
+
+.copyright {
+  color: #ffffff;
+}
