@@ -55,6 +55,11 @@ body {
   min-width: 308px;
   justify-content: flex-end;
 }
+@media (max-width: 991px) {
+  .login {
+    justify-content: flex-start;
+  }
+}
 .login a {
   text-decoration: none;
   font-weight: 500;
@@ -133,6 +138,15 @@ h2 {
   margin-bottom: 30px;
 }
 
+h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 63px;
+}
+
 .how-it-works {
   background-color: #F8F8F8;
   padding-top: 96px;
@@ -185,6 +199,9 @@ h2 {
     flex-direction: column;
   }
 }
+.about-us__item:first-child {
+  border: 1px solid red;
+}
 .about-us__item img {
   display: flex;
   margin: 67px auto 36px auto;
@@ -194,4 +211,107 @@ h2 {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+}
+
+.personal-area {
+  margin-bottom: 96px;
+}
+.personal-area h1 {
+  justify-content: center;
+  display: flex;
+  margin-top: 102px;
+  margin-bottom: 20px;
+}
+.personal-area__text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.btn-site {
+  color: #ffffff;
+  background-color: #3298DC;
+  border-color: #3298DC;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50px;
+}
+.btn-site:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.box-shadow {
+  margin: 18px;
+  padding: 35px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.box-shadow button {
+  display: flex;
+}
+
+.color-blue {
+  color: #3298DC;
+}
+
+.color-green {
+  color: #008826;
+}
+
+.color-gray {
+  color: #CFCFCF;
+}
+
+main a {
+  color: #3298DC;
+  text-decoration: underline;
+}
+main a:hover {
+  color: #3298DC;
+  text-decoration: none;
+}
+
+.icon-button {
+  display: block;
+  width: 25px;
+  height: 30px;
+}
+.icon-button-upload {
+  background-image: url("../images/icons/upload.svg");
+  background-size: cover;
+}
+
+.icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+.icon-arrow-down {
+  background-image: url("../images/icons/arrow-down.svg");
+  background-size: cover;
+}
+.icon-times {
+  background-image: url("../images/icons/times.svg");
+  background-size: cover;
+}
+
+.table th {
+  font-size: 18px;
+}
+.table td {
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+@media (max-width: 767px) {
+  .buttons {
+    flex-direction: column;
+  }
 }
