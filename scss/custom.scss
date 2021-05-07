@@ -322,14 +322,6 @@ main a {
 
 }
 
-.table {
-  th {
-    font-size: 18px;
-  }
-  td {
-    font-size: 16px;
-  }
-}
 
 .buttons {
   display: flex;
@@ -373,6 +365,41 @@ main a {
   transition: .25s ease;
 }
 
+
+.table-doc {
+  border-spacing: 10px;
+  border-collapse: separate;
+
+  th {
+    font-size: 18px;
+  }
+  td {
+    font-size: 16px;
+  }
+}
+.table-doc>:not(:last-child)>:last-child>* {
+  //border-bottom-color: red;
+  border-bottom-color: transparent;
+}
+.table-doc>:not(caption)>*>* {
+  padding: .9rem .5rem;
+  border-bottom-width: 0;
+}
+
+.table-doc tbody tr{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+//.table-doc thead {
+//  position: relative;
+//  &::after {
+//    content: '';
+//    width: 100%;
+//    height: 1px;
+//    position: absolute;
+//  }
+//}
+
+
 //адаптивность таблицы
 @media screen and (max-width: 505px) {
   table.table-doc {
@@ -399,6 +426,17 @@ main a {
   table.table-doc td {
     display: block;
     text-align: right;
+    @media (max-width:480px) {
+      font-size: 14px;
+    }
+
+    span {
+      border: 1px solid green;
+      display: inline-block;
+      width: 50%;
+      text-align: start;
+      font-size: 12px;
+    }
   }
 
   table.table-doc td::before {
@@ -420,6 +458,4 @@ main a {
 }
 
 .get-code,
-.get-link {
-  white-space: nowrap;
-}
+.get-link {}

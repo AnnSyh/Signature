@@ -297,13 +297,6 @@ main a:hover {
   background-size: cover;
 }
 
-.table th {
-  font-size: 18px;
-}
-.table td {
-  font-size: 16px;
-}
-
 .buttons {
   display: flex;
   align-items: center;
@@ -348,6 +341,30 @@ main a:hover {
   transition: .25s ease;
 }
 
+.table-doc {
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+.table-doc th {
+  font-size: 18px;
+}
+.table-doc td {
+  font-size: 16px;
+}
+
+.table-doc > :not(:last-child) > :last-child > * {
+  border-bottom-color: transparent;
+}
+
+.table-doc > :not(caption) > * > * {
+  padding: .9rem .5rem;
+  border-bottom-width: 0;
+}
+
+.table-doc tbody tr {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (max-width: 505px) {
   table.table-doc {
     border: 0;
@@ -374,6 +391,20 @@ main a:hover {
     display: block;
     text-align: right;
   }
+}
+@media screen and (max-width: 505px) and (max-width: 480px) {
+  table.table-doc td {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 505px) {
+  table.table-doc td span {
+    border: 1px solid green;
+    display: inline-block;
+    width: 50%;
+    text-align: start;
+    font-size: 12px;
+  }
 
   table.table-doc td::before {
     content: attr(data-label);
@@ -390,9 +421,4 @@ main a:hover {
   margin: auto;
   width: 20px;
   display: block;
-}
-
-.get-code,
-.get-link {
-  white-space: nowrap;
 }
