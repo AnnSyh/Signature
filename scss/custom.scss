@@ -426,16 +426,12 @@ main a {
   table.table-doc td {
     display: block;
     text-align: right;
-    @media (max-width:480px) {
-      font-size: 14px;
-    }
 
     span {
-      border: 1px solid green;
       display: inline-block;
       width: 50%;
       text-align: start;
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 
