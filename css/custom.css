@@ -315,3 +315,84 @@ main a:hover {
     flex-direction: column;
   }
 }
+
+.upload-file__wrapper {
+  display: block;
+  width: 230px;
+}
+
+.upload-file__input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  width: 0.4px;
+  height: 0.4px;
+}
+
+.upload-file__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.upload-file__icon {
+  width: 30px;
+  height: auto;
+  margin-right: 11px;
+}
+
+.upload-file__label .upload-file__text,
+.upload-file__label .upload-file__icon path {
+  transition: .25s ease;
+}
+
+@media screen and (max-width: 505px) {
+  table.table-doc {
+    border: 0;
+  }
+
+  table.table-doc thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table.table-doc tr {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  table.table-doc td {
+    display: block;
+    text-align: right;
+  }
+
+  table.table-doc td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table.table-doc td:last-child {
+    border-bottom: 0;
+  }
+}
+.without-data-label {
+  margin: auto;
+  width: 20px;
+  display: block;
+}
+
+.get-code,
+.get-link {
+  white-space: nowrap;
+}
