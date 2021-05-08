@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   const forms = document.querySelectorAll('form');
 
@@ -47,4 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
       fileList = [];
     }
   })
-  })
+  });
+
+
