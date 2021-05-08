@@ -6,7 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link href="./css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <script src="https://use.fontawesome.com/78f0ef5033.js"></script>
   <title>КОД для размещения на сайте</title>
 </head>
@@ -38,84 +38,50 @@
 
 <main>
   <div class="container">
-    <div class="personal-area">
+    <div class="personal-area code-area">
       <div class="row">
         <h1>КОД для размещения на сайте</h1>
-        <div class="personal-area__text  w-50  m-auto">
+        <div class="personal-area__text  m-auto">
           Разместите указанный код на вашем сайте в том месте, где хотите видеть документ с подписью
         </div>
-        <form action="">
+        <form action="" class="code-blocks">
+          <div class="mb-5">
+            <h4>iFrame-код</h4>
+            <div class="code"><pre><code>&lt;iframe style=&quot;border: 0px;&quot; src=&quot;https://enigma-key.ru/documents/84&quot;
+          width=&quot;650&quot; height=&quot;82&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; align=&quot;left&quot; seamless=&quot;&quot;&gt;
+  &lt;/iframe&gt;
+</code></pre>
+            </div>
+          </div>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">iFrame-код</label>
-            <textarea
-              class="form-control"
-              id="exampleInputEmail1"
-              value='fffffff'
-            ></textarea>
+            <h4>Продвинутый вариант</h4>
+            <div class="code">
+<pre><code>&lt;div&gt;
+&lt;img src=&quot;https://enigma-key.ru/static/assets/img/ECP2.png&quot; onmouseover=&quot;toggle(document.getElementById('tooltip84'))&quot; onmouseout=&quot;toggle(document.getElementById('tooltip84'))&quot;&gt;
+       &lt;span id='tooltip84' style  = &quot;display: none; width:auto; background-color: #007acc; color: #fff; text-align: center; border-radius: 6px; font-family: Helvetica, sans-serif;
+          font-size: smaller; position: absolute; z-index: 1;&quot;&gt;
+       &lt;/span&gt;
+       &lt;span&gt;
+         &lt;a href=&quot;https://enigma-key.ru/viewdoc/84&quot; &gt;Положение о промежуточной аттестации.pdf&lt;/a&gt;
+       &lt;/span&gt;
+
+       &lt;span&gt;
+         &lt;a href=&quot;https://enigma-key.ru/download/sign/84&quot; class=&quot;sign-link&quot;&gt; подпись &lt;/a&gt;
+       &lt;/span&gt;
+
+
+   &lt;script defer &gt;
+    function toggle (elem) {
+      elem.style.display = (elem.style.display == 'none') ? '' : 'none'
+    }
+   &lt;/script&gt;
+   &lt;script defer&gt;
+  document.addEventListener(&quot;DOMContentLoaded&quot;, function() {
+    settext(document.getElementById('tooltip84'))
+</code></pre>
+            </div>
           </div>
         </form>
-      </div>
-    </div>
-    <div class="uploaded-documents">
-      <h3>Загруженные документы</h3>
-      <div class="table-responsive">
-          <table class="table  table-doc">
-        <thead>
-        <tr>
-          <th>Документы</th>
-          <th>Код для размещения на сайте</th>
-          <th>Визуализация подписи</th>
-          <th></th>
-          <th></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td><i class="fa fa-file-text-o fa-lg color-blue me-3" aria-hidden="true"></i>Положение о промежуточной
-            аттестации.pdf
-          </td>
-          <td><i class="fa fa-link fa-rotate-90 fa-lg color-blue me-3" aria-hidden="true"></i><a href="#">Получить
-            код</a></td>
-          <td><i class="fa fa-link fa-rotate-90 fa-lg color-blue me-3" aria-hidden="true"></i><a href="#">Получить
-            ссылку</a></td>
-          <td><a href="#"><i class="icon icon-arrow-down" aria-hidden="true"></i></a></td>
-          <td><a href="#"><i class="icon icon-times" aria-hidden="true"></i></a></td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-file-text-o fa-lg color-blue me-3" aria-hidden="true"></i>Положение о промежуточной
-            аттестации.pdf
-          </td>
-          <td><i class="fa fa-link fa-rotate-90 fa-lg color-blue me-3" aria-hidden="true"></i><a href="#">Получить
-            код</a></td>
-          <td><i class="fa fa-link fa-rotate-90 fa-lg color-blue me-3" aria-hidden="true"></i><a href="#">Получить
-            ссылку</a></td>
-          <td><a href="#"><i class="icon icon-arrow-down" aria-hidden="true"></i></a></td>
-          <td><a href="#"><i class="icon icon-times" aria-hidden="true"></i></a></td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-file-text-o fa-lg color-blue me-3" aria-hidden="true"></i>Положение о промежуточной
-            аттестации.pdf
-          </td>
-          <td><i class="fa fa-link fa-rotate-90 fa-lg color-blue me-3" aria-hidden="true"></i><a href="#">Получить
-            код</a></td>
-          <td><i class="fa fa-link fa-rotate-90 fa-lg color-blue me-3" aria-hidden="true"></i><a href="#">Получить
-            ссылку</a></td>
-          <td><a href="#"><i class="icon icon-arrow-down" aria-hidden="true"></i></a></td>
-          <td><a href="#"><i class="icon icon-times" aria-hidden="true"></i></a></td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-file-text-o fa-lg color-blue me-3" aria-hidden="true"></i>Положение о промежуточной
-            аттестации.pdf
-          </td>
-          <td><i class="fa fa-link fa-rotate-90 fa-lg color-blue me-3" aria-hidden="true"></i><a href="#">Получить
-            код</a></td>
-          <td><i class="fa fa-link fa-rotate-90 fa-lg color-blue me-3" aria-hidden="true"></i><a href="#">Получить
-            ссылку</a></td>
-          <td><a href="#"><i class="icon icon-arrow-down" aria-hidden="true"></i></a></td>
-          <td><a href="#"><i class="icon icon-times" aria-hidden="true"></i></a></td>
-        </tr>
-        </tbody>
-      </table>
       </div>
     </div>
   </div>
