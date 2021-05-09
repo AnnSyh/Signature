@@ -357,6 +357,9 @@ main {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    @media(max-width:480px){
+      flex-direction: column;
+    }
 
     li {
       margin-bottom: 24px;

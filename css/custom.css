@@ -326,6 +326,11 @@ main ul.doc-list {
   width: 100%;
   justify-content: space-evenly;
 }
+@media (max-width: 480px) {
+  main ul.doc-list {
+    flex-direction: column;
+  }
+}
 main ul.doc-list li {
   margin-bottom: 24px;
   margin-right: 10px;
