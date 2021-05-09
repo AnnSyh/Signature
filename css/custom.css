@@ -267,7 +267,13 @@ h5 {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
+}
+.instructions-area .carousel-control-prev-icon {
+  background-image: url("../images/icons/prev-arrow.svg");
+}
+.instructions-area .carousel-control-next-icon {
+  background-image: url("../images/icons/next-arrow.svg");
 }
 
 .btn-site {
@@ -314,12 +320,13 @@ main a:hover {
   text-decoration: none;
 }
 main ul.doc-list {
+  font-size: 18px;
   list-style-type: none;
-  margin-bottom: 90px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 main ul.doc-list li {
-  width: calc(50% - 10px);
-  float: left;
   margin-bottom: 24px;
   margin-right: 10px;
 }
@@ -331,7 +338,13 @@ main ul.doc-list li {
 main ul.doc-list li a {
   display: flex;
   align-items: baseline;
-  max-width: 430px;
+  max-width: 344px;
+  margin-bottom: 27px;
+}
+main ul.doc-list li .fa-xl {
+  font-size: 1.7em;
+  line-height: .75em;
+  vertical-align: -15%;
 }
 main .item-error {
   display: flex;
@@ -340,6 +353,7 @@ main .item-error {
   padding-top: 100px;
 }
 main .item-error h1 {
+  text-align: center;
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 700;
@@ -545,6 +559,6 @@ main .round-blue {
   font-size: 14px;
 }
 
-.carousel-item {
-  text-align: center;
+.container-wrap {
+  position: relative;
 }
