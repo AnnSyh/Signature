@@ -365,6 +365,11 @@ h5 {
   color: #ffffff;
   text-decoration: underline;
 }
+@media (max-width: 370px) {
+  .btn-site {
+    min-width: 190px;
+  }
+}
 
 .box-shadow {
   margin: 18px;
