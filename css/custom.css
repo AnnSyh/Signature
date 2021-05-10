@@ -58,15 +58,15 @@ body {
   background-image: url(../images/icons/close.svg);
 }
 
-.navbar-project .navbar-nav li {
-  border-bottom: 1px solid #ADDAF9;
-}
-
 .navbar-footer-mobile {
   display: none;
 }
 
 @media (max-width: 767px) {
+  .navbar-project .navbar-nav li {
+    border-bottom: 1px solid #ADDAF9;
+  }
+
   .navbar-footer-desktop {
     display: none !important;
   }
@@ -83,6 +83,9 @@ body {
   .navbar-footer-mobile .navbar-nav li {
     border: none;
     margin: 0 45px;
+  }
+  .navbar-footer-mobile a.nav-link {
+    text-decoration: underline;
   }
 }
 @media (max-width: 375px) {
@@ -620,4 +623,9 @@ main .round-blue {
 
 .container-wrap {
   position: relative;
+}
+
+a.link-tel {
+  color: #000000;
+  text-decoration: none;
 }

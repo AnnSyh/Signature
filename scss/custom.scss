@@ -59,14 +59,16 @@ body{
   background-image: url(../images/icons/close.svg);
 }
 
-.navbar-project .navbar-nav li {
-  border-bottom: 1px solid #ADDAF9;
-}
+
 
 .navbar-footer-mobile {
   display: none;
 }
 @media (max-width:767px) {
+
+  .navbar-project .navbar-nav li {
+    border-bottom: 1px solid #ADDAF9;
+  }
 
   .navbar-footer-desktop {
     display: none !important;
@@ -84,7 +86,9 @@ body{
         margin: 0 45px;
       }
     }
-
+    a.nav-link {
+      text-decoration: underline;
+    }
   }
 }
 @media (max-width: 375px) {
@@ -669,3 +673,7 @@ main {
   position: relative;
 }
 
+a.link-tel {
+  color: #000000;
+  text-decoration: none;
+}
