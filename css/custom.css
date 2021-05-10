@@ -669,6 +669,9 @@ main .round-blue {
   align-items: center;
   justify-content: space-between;
 }
+.code-blocks .copy-btn h4 {
+  width: 50%;
+}
 
 .container-wrap {
   position: relative;
