@@ -646,9 +646,14 @@ main .round-blue {
   padding: 12px;
   max-height: 395px;
   overflow-y: auto;
+  width: 100%;
+  min-height: 90px;
 }
 .code-blocks .code-blocks {
   margin-top: 54px;
+}
+.code-blocks .code1 {
+  min-height: 400px;
 }
 .code-blocks pre {
   margin: 0px;
@@ -657,6 +662,12 @@ main .round-blue {
 .code-blocks code {
   font-family: Roboto;
   font-size: 14px;
+}
+.code-blocks .copy-btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .container-wrap {

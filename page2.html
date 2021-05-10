@@ -49,19 +49,28 @@
         <form action="" class="code-blocks">
 
           <div class="mb-5">
-            <h4>iFrame-код</h4>
-            <button id="copyButton" onclick="copytext()">Copy</button>
-            <p class="coupon-alert">Coupon code copied</p>
-            <div class="code" id="copyText"><pre><code>&lt;iframe style=&quot;border: 0px;&quot; src=&quot;https://enigma-key.ru/documents/84&quot;
-          width=&quot;650&quot; height=&quot;82&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; align=&quot;left&quot; seamless=&quot;&quot;&gt;
-  &lt;/iframe&gt;
-</code></pre>
+            <div class="copy-btn">
+              <h4>iFrame-код</h4>
+              <a id="copyButton" onclick="copytext()">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+                Копировать код
+              </a>
             </div>
+            <p class="coupon-alert">Coupon code copied</p>
+            <textarea class="code" id="copyText">&lt;iframe style=&quot;border: 0px;&quot; src=&quot;https://enigma-key.ru/documents/84&quot;
+          width=&quot;650&quot; height=&quot;82&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; align=&quot;left&quot; seamless=&quot;&quot;&gt;
+  &lt;/iframe&gt;</textarea>
           </div>
           <div class="mb-3">
-            <h4>Продвинутый вариант</h4>
-            <div class="code">
-<pre><code>&lt;div&gt;
+            <div class="copy-btn">
+              <h4>Продвинутый вариант</h4>
+              <a id="copyButton1" onclick="copytext1()">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+                Копировать код
+              </a>
+            </div>
+            <textarea class="code code1" id="copyText1">
+&lt;div&gt;
 &lt;img src=&quot;https://enigma-key.ru/static/assets/img/ECP2.png&quot; onmouseover=&quot;toggle(document.getElementById('tooltip84'))&quot; onmouseout=&quot;toggle(document.getElementById('tooltip84'))&quot;&gt;
        &lt;span id='tooltip84' style  = &quot;display: none; width:auto; background-color: #007acc; color: #fff; text-align: center; border-radius: 6px; font-family: Helvetica, sans-serif;
           font-size: smaller; position: absolute; z-index: 1;&quot;&gt;
@@ -83,8 +92,7 @@
    &lt;script defer&gt;
   document.addEventListener(&quot;DOMContentLoaded&quot;, function() {
     settext(document.getElementById('tooltip84'))
-</code></pre>
-            </div>
+            </textarea>
           </div>
         </form>
       </div>
@@ -165,3 +173,4 @@
 
 </body>
 </html>
+

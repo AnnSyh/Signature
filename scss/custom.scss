@@ -686,9 +686,15 @@ main {
     max-height: 395px;
     overflow-y: auto;
 
+    width: 100%;
+    min-height: 90px;
+
     &-blocks {
       margin-top: 54px;
     }
+  }
+  .code1 {
+    min-height: 400px;
   }
   pre {
     margin: 0px;
@@ -697,6 +703,13 @@ main {
   code {
     font-family: Roboto;
     font-size: 14px;
+  }
+
+  .copy-btn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -728,3 +741,4 @@ a.link-tel {
     width: 100%;
   }
 }
+

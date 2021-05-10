@@ -9,19 +9,31 @@ document.addEventListener('DOMContentLoaded', () => {
 var text = document.getElementById("copyText");
 var btn = document.getElementById("copyButton");
 
+var text1 = document.getElementById("copyText1");
+var btn1 = document.getElementById("copyButton1");
+
 function copytext() {
   console.log("Button clicked.");
-  copyToClipboard("#copyText");
-  $(".coupon-alert").fadeIn("slow");
+
+  var copyText = document.getElementById("copyText");
+  console.log('copyText = ',copyText);
+  copyText.select();
+  document.execCommand("copy");
+  // alert("Copied the text: " + copyText.value);
 };
 
-function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
+function copytext1() {
+  console.log("Button clicked.");
+
+  var copyText = document.getElementById("copyText1");
+  console.log('copyText1 = ',copyText1);
+  copyText.select();
   document.execCommand("copy");
-  $temp.remove();
-}
+  // alert("Copied the text: " + copyText1.value);
+};
+
+
+
 
 
 
