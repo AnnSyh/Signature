@@ -48,8 +48,49 @@ body{
     padding-left: 2.5rem;
   }
 }
-.navbar-toggler:focus {
+.navbar-project .navbar-toggler:focus {
   box-shadow: 0 0 0 0.1rem;
+}
+.navbar-project .navbar-toggler {
+  border: none;
+  box-shadow: none !important;
+}
+.navbar-project .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-image: url(../images/icons/close.svg);
+}
+
+.navbar-project .navbar-nav li {
+  border-bottom: 1px solid #ADDAF9;
+}
+
+.navbar-footer-mobile {
+  display: none;
+}
+@media (max-width:767px) {
+
+  .navbar-footer-desktop {
+    display: none !important;
+  }
+  .navbar-footer-mobile {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    .navbar-nav {
+      flex-direction: row;
+      li {
+        border: none;
+        margin: 0 45px;
+      }
+    }
+
+  }
+}
+@media (max-width: 375px) {
+  .navbar-footer-mobile .navbar-nav {
+    flex-direction: column;
+  }
 }
 
 .login {
@@ -518,6 +559,11 @@ main {
   td {
     font-size: 16px;
   }
+
+  i.fa-file-text-o,
+  i.fa-link {
+    margin-right: 10px;
+  }
 }
 .table-doc>:not(:last-child)>:last-child>* {
   //border-bottom-color: red;
@@ -576,6 +622,14 @@ main {
 
   table.table-doc td:last-child {
     border-bottom: 0;
+  }
+}
+@media(max-width:345px) {
+  table.table-doc td::before {
+    font-size: 14px;
+  }
+  table.table-doc td span {
+    width: 53%;
   }
 }
 
