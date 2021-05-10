@@ -11,8 +11,17 @@ var btn = document.getElementById("copyButton");
 
 function copytext() {
   console.log("Button clicked.");
-  text.select();
-  document.execCommand("copy");
+  copyToClipboard("#copyText");
+  $(".coupon-alert").fadeIn("slow");
 };
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
 
 

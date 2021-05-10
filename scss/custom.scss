@@ -115,14 +115,25 @@ body{
     }
   }
 }
-
-.user-icon {
+.user-icon,
+.user-icon-blue,
+.key-blue {
   width: 42px;
   height: 42px;
+  min-width: 42px;
+  min-height: 42px;
   margin-right: 10px;
-  background-image: url(../images/icons/enter.svg);
   background-repeat: no-repeat;
   display: inline-flex;
+}
+.user-icon {
+  background-image: url(../images/icons/enter.svg);
+}
+.user-icon-blue {
+  background-image: url(../images/icons/enter-blue.svg);
+}
+.key-blue {
+  background-image: url(../images/icons/key-blue.svg);
 }
 
 .copyright {
@@ -290,6 +301,10 @@ h5  {
     margin-top: 102px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    @media(max-width:480px){
+      margin-top: 50px;
+      margin-bottom: 20px !important;
+    }
   }
 
   &__text {
@@ -331,6 +346,7 @@ h5  {
     margin-bottom: 80px;
   }
 
+
   //.carousel { border: 1px solid red;
   //  position: relative;
   //  max-width: 1056px;
@@ -355,6 +371,9 @@ h5  {
   padding: 14px 28px;
   font-size: 18px;
   font-weight: 500;
+
+  min-width: 230px;
+  justify-content: center;
 
   border-radius: 50px;
 
@@ -480,6 +499,7 @@ main {
   display: block;
   width: 25px;
   height: 30px;
+  margin-right: 10px;
 
   &-upload {
     background-image: url('../images/icons/upload.svg');
@@ -676,4 +696,24 @@ main {
 a.link-tel {
   color: #000000;
   text-decoration: none;
+}
+.coupon-alert {
+  display: none;
+  color: green;
+}
+
+.col-authorization {
+  max-width: 520px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  span {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
