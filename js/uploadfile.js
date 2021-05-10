@@ -2,9 +2,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const forms = document.querySelectorAll('form');
 
-  for (let i = 1; i <= 4; i++) { // сюда будем помещать drug-&-drop файлы (4)
-    window['uploadDragFiles_'+i] = new Object();
-  }
+  // for (let i = 1; i <= 4; i++) { // сюда будем помещать drug-&-drop файлы (4)
+  //   window['uploadDragFiles_'+i] = new Object();
+  // }
 
   document.querySelectorAll('.upload-file__wrapper').forEach(function (current_item, index) {
 
